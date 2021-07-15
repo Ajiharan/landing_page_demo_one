@@ -5,46 +5,46 @@ import "./Card.scss";
 const Cards = () => {
   return (
     <div className="cards">
-      <h1>Checkout These Epic Destinations</h1>
+      <h1>Checkout These Epic Places</h1>
       <div className="cards-container">
         <div className="cards-wrapper">
           <div className="cards-items">
             <CardItem
               src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-900,h-900/i1"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Adventure"
+              text="Explore the hidden Tree deep inside the Amazon Jungle"
+              label="Wild Photography"
               path="/services"
             />
             <CardItem
               src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-900,h-900/i2"
               text="Travel through the Islands of Bali in a Private Cruise"
-              label="Luxury"
+              label="In Bali"
               path="/services"
             />
           </div>
           <div className="cards-items">
             <CardItem
               src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-500,h-500/i3"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Adventure"
+              text="Ride through the Jungle  on a guided camel tour"
+              label="In Jungle"
               path="/services"
             />
             <CardItem
               src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-500,h-500/i4"
-              text="Travel through the Islands of Bali in a Private Cruise"
-              label="Luxury"
+              text="Take different shots with Modern Cameras"
+              label="Modern Cameras"
               path="/services"
             />
             <CardItem
               src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-500,h-500/i5"
-              text="Travel through the Islands of Bali in a Private Cruise"
-              label="Mysterey"
+              text="Happiest Moment when Take a Picture"
+              label="Instant Shot"
               path="/services"
             />
             <CardItem
-              src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-500,h-500/i4"
+              src="https://ik.imagekit.io/nqx4uepqs3i/tr:w-500,h-500/i8"
               text="Travel through the Islands of Bali in a Private Cruise"
-              label="Luxury"
+              label="Popularity"
               path="/services"
             />
           </div>

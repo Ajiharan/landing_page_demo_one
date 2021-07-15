@@ -1,32 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import "./Navbar.scss";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [isButtonShow, setButtonShow] = useState(true);
+  const [isScroll, setScroll] = useState(false);
 
   const closeMobileBtn = () => setClick(false);
 
-  const showButton = () => {
+  const showButton = useCallback(() => {
+    console.log(window.innerWidth);
     if (window.innerWidth <= 970) {
       setButtonShow(false);
     } else {
       setButtonShow(true);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
 
   useEffect(() => {
     showButton();
-  }, []);
+    window.addEventListener("resize", showButton);
+    return () => {
+      window.removeEventListener("resize", showButton);
+    };
+  }, [showButton]);
 
   const handleClick = () => setClick(!click);
 
-  window.addEventListener("resize", showButton);
-
   return (
     <React.Fragment>
-      <div className="navbar">
+      <div className={`navbar ${isScroll ? " navbar-scroll" : ""}`}>
         <div className="navbar-container">
           <Link to="./home" className="navbar-logo" onClick={closeMobileBtn}>
             PHCY <i className="fas fa-camera-retro"></i>
