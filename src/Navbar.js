@@ -45,7 +45,7 @@ const Navbar = () => {
     <React.Fragment>
       <div className={`navbar ${isScroll ? " navbar-scroll" : ""}`}>
         <div className="navbar-container">
-          <Link to="./home" className="navbar-logo" onClick={closeMobileBtn}>
+          <Link to="/" className="navbar-logo" onClick={closeMobileBtn}>
             PHCY <i className="fas fa-camera-retro"></i>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -53,27 +53,27 @@ const Navbar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="./home" className="nav-links" onClick={closeMobileBtn}>
+              <Link to="/" className="nav-links" onClick={closeMobileBtn}>
                 Home
               </Link>
             </li>
             <li className="nav-item" onClick={closeMobileBtn}>
-              <Link to="./home" className="nav-links">
+              <Link to="/services" className="nav-links">
                 Services
               </Link>
             </li>
             <li className="nav-item" onClick={closeMobileBtn}>
-              <Link to="./home" className="nav-links">
+              <Link to="/" className="nav-links">
                 Products
               </Link>
             </li>
             <li className="nav-item" onClick={closeMobileBtn}>
-              <Link to="./home" className="nav-links">
+              <Link to="/" className="nav-links">
                 Offers
               </Link>
             </li>
             <li className="nav-item" onClick={closeMobileBtn}>
-              <Link to="./home" className="nav-links-mobile">
+              <Link to="/" className="nav-links-mobile">
                 Sign Up
               </Link>
             </li>

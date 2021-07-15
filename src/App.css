@@ -3,3 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+.services-heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  position: absolute;
+  top: 20px;
+  color: white;
+  left: 0;
+  right: 0;
+}
+
+.services {
+  position: relative;
+  margin-top: -40px;
+  background-image: url("https://ik.imagekit.io/nqx4uepqs3i/tr:w-1800,h-1800/i7");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
