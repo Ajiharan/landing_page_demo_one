@@ -40,6 +40,9 @@
     }
   }
   &-logo {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px;
     display: flex;
     justify-self: start;
     color: white;
@@ -63,9 +66,9 @@
 
 @media screen and (max-width: 970px) {
   .nav-menu {
+    display: flex !important;
     position: absolute;
     top: 60px;
-    display: flex !important;
     flex-direction: column;
     height: 87.5vh;
     width: 100vw !important;

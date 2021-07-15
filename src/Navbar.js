@@ -6,9 +6,7 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const [isButtonShow, setButtonShow] = useState(true);
 
-  const closeMobileBtn = () => {
-    setClick(false);
-  };
+  const closeMobileBtn = () => setClick(false);
 
   const showButton = () => {
     if (window.innerWidth <= 970) {

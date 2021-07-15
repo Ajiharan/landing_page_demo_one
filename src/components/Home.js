@@ -1,7 +1,12 @@
 import React from "react";
+import HeadSection from "../HeadSection";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <React.Fragment>
+      <HeadSection />
+    </React.Fragment>
+  );
 };
 
 export default Home;
