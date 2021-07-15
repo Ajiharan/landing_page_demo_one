@@ -5,14 +5,16 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
+
   font-size: 1.2rem;
   top: 0;
   &-container {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
-    max-width: 1400px;
+    max-width: 1500px;
 
     .nav-menu {
       display: grid;
@@ -40,6 +42,9 @@
     }
   }
   &-logo {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px;
     display: flex;
     justify-self: start;
     color: white;
@@ -63,12 +68,12 @@
 
 @media screen and (max-width: 970px) {
   .nav-menu {
+    display: flex !important;
     position: absolute;
     top: 60px;
-    display: flex !important;
     flex-direction: column;
     height: 87.5vh;
-    width: 100vw !important;
+    width: 98vw !important;
     background: #242222;
     opacity: 0;
     left: -100%;
